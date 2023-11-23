@@ -1,0 +1,135 @@
+body {
+  font-family: 'Pretendard','Noto Sans KR', sans-serif;
+  color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  height: 48px;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1000;
+  font-size: 24px;
+  font-weight: 300;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+}
+
+.header .leftmenu {
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .leftmenu .contactme {
+  margin-right: 10vw;
+}
+
+.header .leftmenu .contactme,
+.header .leftmenu .homeSection {
+  text-decoration: underline;
+  font-style: normal;
+  line-height: normal;
+  text-transform: lowercase;
+  color: inherit;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+  cursor: pointer;
+}
+
+.header .leftmenu .contactme:hover,
+.header .leftmenu .homeSection:hover {
+  color: #ff6700;
+  -webkit-text-decoration-color: #ff6700;
+          text-decoration-color: #ff6700;
+}
+
+.header .rightmenu {
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+  font-style: normal;
+  line-height: normal;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-transform: lowercase;
+  color: inherit;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.header .rightmenu:hover {
+  color: #ff6700;
+  -webkit-text-decoration-color: #ff6700;
+          text-decoration-color: #ff6700;
+}
+
+.contentsWrap .workContents {
+  margin-top: 120px;
+  padding: 0px 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contentsWrap .workContents .contentCard {
+  margin-top: 40px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.contentsWrap .workContents .contentCard .workThumbnail img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contentsWrap .workContents .contentCard .contentInfo .infoTitle {
+  margin-top: 12px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.contentsWrap .workContents .contentCard .contentInfo .infoDes {
+  margin-top: 8px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  /* 33.6px */
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=resume.css.map */
